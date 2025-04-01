@@ -1,5 +1,4 @@
-# Kw_app
-# Generator numerów KW i pobieranie danych
+# Generator numerów KW i pobieranie danych Kw_app
 
 ## Opis
 
@@ -11,36 +10,14 @@ Program posiada interfejs graficzny oparty na Tkinter, który udostępnia dwie z
 1. **Generowanie numerów:** Umożliwia wybór prefiksu z uporządkowanej listy (np. „RA1G – GRÓJEC”), wprowadzenie zakresu liczb oraz generowanie numerów ksiąg.
 2. **Pobieranie danych:** Umożliwia wskazanie pliku z numerami ksiąg i rozpoczęcie procesu pobierania danych ze strony.
 
-## Wymagania
-
-- **Python 3.6+**
-- Biblioteki:
-  - `tkinter` (dołączony standardowo w Pythonie)
-  - `selenium`
-  - `webdriver_manager`
-  - `beautifulsoup4`
-
-## Instalacja
-
-1. Sklonuj repozytorium:
-   ```bash
-   git clone https://github.com/twoj-uzytkownik/kw-scraper.git
-   cd kw-scraper
-2. Zainstaluj wymagane biblioteki:
-   ```bash
-   pip install selenium webdriver_manager beautifulsoup4
-
 ## Użycie
 
-1. Uruchom program:
-   ```bash
-   python <nazwa_pliku>.py
-2. W interfejsie graficznym dostępne są dwie zakładki:
-   **Generowanie numerów:**
+**Generowanie numerów:**
 - Wybierz prefiks z rozwijanej listy (np. „RA1G – GRÓJEC”).
 - Wprowadź zakres start i koniec dla 8-cyfrowej części numeru.
 - Kliknij przycisk "Generuj numery". Wygenerowane numery zostaną zapisane do pliku ksiegi.txt oraz wyświetlone w logu.
-   **Pobieranie danych:**
+
+**Pobieranie danych:**
 - Wskaż plik z numerami ksiąg (domyślnie ksiegi.txt).
 - Kliknij przycisk "Uruchom pobieranie". Program rozpocznie przeszukiwanie strony dla każdego numeru, a wyniki zapisze w pliku wyniki.json.
 
